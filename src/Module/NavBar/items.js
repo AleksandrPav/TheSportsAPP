@@ -9,7 +9,7 @@ const items = [
     },
     {
         id: nanoid(),
-        title: "About",
+        title: "About Sport",
         url: "/about",
     },
     {

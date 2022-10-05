@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
     const fetchSports = async () => {
       try {
-        const { data } = await listAllSports();
+        const { data} = await listAllSports();
         setSports(data.sports);
       }
       catch (error) {
