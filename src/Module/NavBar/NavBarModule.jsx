@@ -1,20 +1,20 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import styles from "./NavBar.module.css";
+import "./NavBar.scss";
 
 import items from "./items";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const getClassName = ({ isActive }) => {
-  const className = isActive ? styles.active : styles.link;
+  const className = isActive ? "active" : "link";
   return className;
 };
 
 const NavBar = () => {
   return (
-    <nav className={styles.navbar}>
-      <ul className="nav justify-content-center">
+    <nav className="navbar justify-content-center">
+      <ul className="nav">
         {items.map(({ url, title, id }) => (
           <li key={id} className="nav-item">
             <NavLink to={url} className={getClassName}>
