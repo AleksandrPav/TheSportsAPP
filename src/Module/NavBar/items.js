@@ -5,7 +5,7 @@ const items = [
     {
         id: nanoid(),
         title: "Home",
-        url: "/home",
+        url: "/",
     },
     {
         id: nanoid(),
