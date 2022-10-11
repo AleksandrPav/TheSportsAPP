@@ -11,6 +11,7 @@ const AboutList = ({ sports, handleBtn }) => {
             <button
               className="btn btn-outline-light"
               onClick={() => handleBtn(sport.idSport)}
+              to={`/about/${sport.idSport}`}
             >
               <img
                 src={sport.strSportIconGreen}

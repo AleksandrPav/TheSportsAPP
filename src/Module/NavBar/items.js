@@ -9,13 +9,8 @@ const items = [
     },
     {
         id: nanoid(),
-        title: "About Sport",
-        url: "/about",
-    },
-    {
-        id: nanoid(),
-        title: "Services",
-        url: "/services",
+        title: "Sport",
+        url: "/sport",
     },
     {
         id: nanoid(),
@@ -26,6 +21,11 @@ const items = [
         id: nanoid(),
         title: "Contact Us",
         url: "/contact",
+    },
+    {
+        id: nanoid(),
+        title: "About Sport",
+        url: "/about",
     },
 ];
 

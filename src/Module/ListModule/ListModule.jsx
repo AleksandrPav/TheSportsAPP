@@ -18,7 +18,7 @@ const listModule = ({ sports }) => {
               <h5 className="card-title">{sport.strSport}</h5>
               <p className="card-text">{sport.strFormat}</p>
               <NavLink
-                to={`/about/${sport.idSport}`}
+                to={`/sport/${sport.strSport}`}
                 className="btn btn-primary"
               >
                 Show more

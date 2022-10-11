@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 const HomePage = lazy(() => import("./Pages/HomePage/HomePage"));
 const AboutPage = lazy(() => import("./Pages/AboutPage/AboutPage"));
+const SportPage = lazy(() => import("./Pages/SportPage/SportPage"));
 
 const UserRoutes = () => {
   return (
@@ -17,6 +18,8 @@ const UserRoutes = () => {
     >
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/sport" element={<SportPage />} />
+        <Route path="/sport/:id" element={<SportPage />} />
         <Route path="/about" element={<AboutPage />} />
       </Routes>
     </Suspense>
